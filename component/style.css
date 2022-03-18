@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200&family=Poppins:wght@300&display=swap');
+
+:root {
+    --colour-sukses: #5cb85c;
+    --colour-primary: #0275d8;
+    --colour-warning: #f0ad4e;
+    --colour-info: #5bc0de;
+    --colour-inverse: #292b2c;
+    --colour-danger: #d9534f;
+    --colour-faded: #e9e9e9;
+    --colour-mute: #999999;
+}
+
+html {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', Sans-Serif;
+    height: 100%;
+    font-size: 14px;
+    /*background-color: var(--colour-faded);*/
+}
+
+aside {
+    /*background: grey;*/
+}
+
+.top {
+    height: 35px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /*background: blue;*/
+}
+
+h2.logo {
+    /*background: red;*/
+    font-size: 22px;
+    border: 2px solid var(--colour-mute);
+    border-top-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+h2.logo:hover {
+    cursor: pointer;
+    animation-name: rotate;
+    animation-duration: 1s;
+    /* animation-iteration-count: infinite;*/
+}
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.blue {
+    color: #33ccff;
+}
+
+.silver {
+    color: #c0c0c0;
+}
+
+.textLogo {
+    position: relative;
+    left: 10px;
+}
+
+.close {
+    position: relative;
+    left: 25px;
+    /*background: #3798b0;*/
+}
+
+div.menu {
+    position: relative;
+    right: 0px;
+    border-bottom: 3px solid var(--colour-mute);
+}
+div.menu:hover {
+    border-width: 1px;
+    box-shadow: 0px 0px 20px #2D8DBD;
+    
+}
+
+div.menu:last-child {
+    border-bottom-right-radius: 85px;
+}
+
+a {
+    height: 30px;
+    color: var(--colour-info);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
